@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red ; */
+}
+:root{
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+    font-family: "Montserrat", sans-serif;
+    
+}
+.contant{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--White);
+    max-width: 48em;
+    height: 27em;
+    margin: 40px;
+    border-radius: 6px;
+    
+}
+.image{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 88px 0 20px;
+    height: 55%;
+}
+span{
+    letter-spacing: .3em;
+    color: var(--Grey);
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Black);
+    padding-bottom: 12px;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Grey);
+    padding-bottom: 12px;
+}
+.price{
+    display: flex;
+    padding-bottom: 12px;
+    align-items: baseline;
+
+}
+.price h3{
+    color: var(--Green-500);
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    
+}
+.price p{
+    text-decoration: line-through;
+    color: var(--Grey);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: .8rem;
+    
+}
+.button{
+    display: flex;
+    background-color: var(--Green-500);
+    border-radius: 6px;
+    padding: 0.8rem;
+    justify-content: center;
+    cursor: pointer;
+}
+.button h4 {
+    color: var(--White);
+    font-weight: 500;
+    padding-left: .8em;
+}
+.button:hover{
+    background-color: var(--Green-700);
+
+}
+@media (max-width:550px){
+    .contant{
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+    }
+    .image{
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+        width: 100%;
+        height: 60%;
+    }
+    .text{
+        padding: 20px;
+        padding-bottom: 0;
+        height: 55%;
+        
+    }
+}
